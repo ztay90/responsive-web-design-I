@@ -66,51 +66,49 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 header {
 	width: 100%;
-	display: inline-block;
-	padding: 15px;
-	background-color: #1160B0;
-	position: fixed;
-	margin-bottom: 100px;
+	display: flex;
+	padding: 2%;
+	justify-content: space-between;
 }
 nav {
-	display: inline-block;
-	width: 85%;
-	text-align: center;
-	vertical-align: middle;
-	margin-top: -20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 25%;
 }
 nav a {
-	margin: 3%;
+	display: flex;
+  align-items: center;
+	margin: 0 12%;
 	text-decoration: none;
-	color: white;
+	color: silver;
 	font-family: 'Odibee Sans', cursive;
-	font-size: 1.8rem;
+	font-size: 1.2rem;
 }
 
 .title-section {
-	display: inline-block;
-	max-width: 100%;
-	margin: 175px 0 0 25%;
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	margin-top: 5%;
 	
 }
 .title-section .title {
 	display: inline-block;
 	text-align: center;
-	
-	
+	vertical-align: middle;
+	width: 30%;
 }
 .title h1 {
 	font-size: 5.5rem;
 	margin-bottom: 0;
-	margin-right: 100px;
 }
-img {
-	display: inline-block;
+img.logo {
+	display: flex;
 }
 .title a {
 	display: inline-block;
 	margin-top: 15px;
-	margin-right: 100px;
 }
 .button {
 	text-decoration: none;
@@ -175,18 +173,17 @@ section .info2 p {
 }
 
 footer {
-	margin: 50px 0 0 225px;
+	margin: 50px 0 0 15%;
 }
 footer h5 {
-	margin-bottom: 20px;
+	margin-bottom: 2%;
 }
 footer .address3 {
-	margin: 15px 0;
+	margin: 1.5% 0;
 }
 footer .copyright {
-	
 	font-size: .9rem;
-	margin: 70px 0 40px 350px;
+	margin: 10% 0 3% 33%;
 }
 
 .line {
@@ -201,3 +198,24 @@ footer .copyright {
 }
 
 
+@media (max-width: 800px) {
+	header {
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    width: 100%;
+  }
+  img.logo {
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+  nav {
+  }
+  nav a {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+	
+}
