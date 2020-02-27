@@ -267,9 +267,6 @@ footer .copyright {
     flex-direction: column-reverse;
     width: 500px;
   }
-	nav a {
-    color: red;
-  }
   img.logo {
     margin: 0 22%;
   }
