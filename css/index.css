@@ -85,7 +85,9 @@ nav a {
 	font-family: 'Odibee Sans', cursive;
 	font-size: 1.2rem;
 }
-
+img.logo {
+	display: flex;
+}
 .title-section {
 	display: flex;
 	width: 100%;
@@ -103,9 +105,6 @@ nav a {
 	font-size: 5.5rem;
 	margin-bottom: 0;
 }
-img.logo {
-	display: flex;
-}
 .title a {
 	display: inline-block;
 	margin-top: 15px;
@@ -118,7 +117,6 @@ img.logo {
 	font-size: 1.2rem;
 	text-align: center;
 }
-
 section .info1 {
 	display: inline-block;
 	width: 100%;
@@ -200,19 +198,65 @@ footer .copyright {
 
 @media (max-width: 800px) {
 	header {
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     flex-wrap: wrap-reverse;
     justify-content: center;
-    width: 100%;
+    
+    /* width: 100%; */
   }
   img.logo {
     justify-content: center;
-    margin-bottom: 2%;
+    margin: 2% 12%;
   }
   nav {
+    margin-left: 0;
   }
   nav a {
     justify-content: center;
+    margin: 0 6%;
+  }
+  .img1 {
+    display: none;
+  }
+  .title-section .title {
+    width: 41%;
+  }
+  .line {
+    margin: 100px 0 0 112px;
+  }
+  section {
+    max-width: 800px;
+  }
+  section .info1 {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    margin-left: 14%;
+  }
+  .first-row {
+    margin: 0 2%;
+  }
+  .middle-img {
+    margin: 0 14%;
+    width: 75%;
+  }
+  section .info2 {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    margin-left: 14%;
+  }
+  section .info2 .col2 {
+    margin: 0 5%;
+  }
+  .line2 {
+    margin: 40px 0 0 112px;
+    width: 75%;
+    border-bottom: 1px solid black;
+  }
+  footer .copyright {
+    font-size: .9rem;
+    margin-left: 30%;
   }
 }
 
